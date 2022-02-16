@@ -1,0 +1,225 @@
+<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet" type='text/css'>
+
+.w{}
+.w_header {
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:10;
+    width:100%;
+    height:45px;
+    padding:0 0 0 0px;
+    background-color:#fff;
+    box-sizing: border-box;
+    border-bottom:2px solid #f9f9f9
+}
+
+
+
+.wallet_gnb{
+    padding-right:0px !important;
+    width:100%; 
+    font-weight:bold;
+    text-align:center;
+    overflow:hidden;
+}
+
+.wallet_gnb .btn_go_prev{
+    text-align:left !important;
+	vertical-align:middle;
+	float:left;
+	width:9px;
+	height:44px;
+	margin-right:9px;
+	text-indent:-9999em;
+	background:url(/btn_go_prev.png) no-repeat 0 12.5px;
+	background-size:9px auto;
+	margin-left: 16px;}
+
+.wallet_gnb .wal_tit{
+    text-align:center;
+    font-size:18px !important;
+    color:#292929;
+    font-weight:600;
+    text-align:center;
+    line-height:44px;
+    padding-right:20px;
+
+}
+
+
+.wallet_area{background-color:#F9F9F9;padding:16px;height:100%;}
+.wallet_area .wallet_tit{color:#3E414B;font-size:16px;margin-bottom:8px;}
+.wal_box{border-radius:12px;border:1px solid #f1f1f1;background-color:#fff; padding:20px 24px;margin-bottom:16px;
+overflow:hidden;}
+
+.wal_box .wb_left{float:left;}
+.wal_box .wb_left .box_tit{padding-bottom:8px;}
+.wal_box .wb_left .box_tit .w_logo img{width:17px;line-height:20px;}
+.wal_box .wb_left .box_tit .wb_tit{
+    padding-left:4px;
+    font-weight:bold;
+    font-size:18px;
+    line-height:20px;
+    font-family: 'Comfortaa', sans-serif;
+    color:#363636;}
+.wal_box .wb_left .box_qcash{
+    font-size:26px;
+    font-family: 'robota'; 
+    color:#363636;
+    letter-spacing:-0.52px;
+    padding-bottom:8px;
+    font-weight:600;}
+.wal_box .wb_left .box_cash{
+    font-size:18px;
+    color:#bfbfbf;
+    letter-spacing:-0.36px;
+    font-family:  'robota';}
+
+
+.wal_box .wb_right{
+    float:right;
+    padding-top:30px;}
+.wal_box .wb_right button{
+    padding:8px 20px;
+    background-color: #2F9AFF;
+    color:#fff;
+    font-size:14px;
+    border-radius: 20px;}
+
+.wbox_area{
+    overflow:hidden;
+    margin-bottom:16px;
+    width:100%;}
+
+.wbox_area .w_lockbtn{
+    float:left;
+    width:calc(50% - 8px);
+    display: block;}
+.wbox_area .w_lockbtn button{
+    background-color:#fff;
+    border:1px solid #F1F1F1;
+    padding:10px;
+    border-radius:12px;
+    width:100%;
+    font-size:16px;
+    color:#363636;}
+.wbox_area .w_lockbtn button span{padding-right:8px;}
+.wbox_area .w_lockbtn button span img{width:12px;}
+.wbox_area .w_refbtn{
+    float:right;
+    width:calc(50% - 8px);}
+.wbox_area .w_refbtn button span{padding-right:8px;}
+.wbox_area .w_refbtn button span img{width:12px;}
+.wbox_area .w_refbtn button{
+    background-color:#fff;
+    border:1px solid #F1F1F1;
+    padding:10px;
+    border-radius:12px;
+    width:100%;
+    font-size:16px;
+    color:#363636;}
+.wbox_area02{
+    margin-bottom:16px;
+    width:100%;}
+.wbox_area02 .w_addbtn{
+    background-color:#fff;
+    border:1px solid #F1F1F1;
+    padding:10px;
+    border-radius:12px;
+    font-size:16px;
+    color:#363636;
+    width:100%;}
+.wbox_area02 .w_addbtn span{padding-right:8px;}
+.wbox_area02 .w_addbtn span img{width:16px;}
+
+.w_area_bot{text-align:center;color:#2F9AFF;font-size:14px;margin-top:28px;}
+.w_area_bot span{padding-right:8px;}
+.w_area_bot span img{width:12px;}
+
+
+
+
+
+/*layer*/
+.btn_pre_close02{
+	position:absolute;
+	left:0px;
+	top:-28px;
+	width:20px;
+	height:20px;
+	text-indent:-999em;
+	background:url(/w_close.png) no-repeat 0 0;
+	background-size:20px auto 
+}
+
+.layer_preview .inner02 {
+	position:fixed;
+	top:50%;
+	left:50%;
+	min-width:240px;
+	max-width:330px;
+    border:1px solid #707070;
+	background:#fff;
+	border-radius:20px;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+    padding:36px 24px;
+
+}
+
+.layer_preview .inner02 .lpop_tit{
+    font-size:16px;
+    color:#363636;
+    text-align:center;
+    margin-bottom:8px;}
+.layer_preview .inner02 .w_myadrs{
+    color:#888888;
+    font-size:14px;
+    margin-bottom:12px;
+    text-align:center;
+}
+#token-addr {
+text-overflow:ellipsis;
+white-space:nowrap;
+word-wrap:normal;
+overflow:hidden;
+}
+.layer_preview .inner02 .w_myad_btn{
+    text-align:center}
+.layer_preview .inner02 .w_myad_btn button{
+    padding:6px 24px;
+    border:1px solid #EFEFEF;
+    border-radius:12px;}
+.layer_preview .inner02 .w_myad_btn button span{padding-right:4px;vertical-align:middle;}
+.layer_preview .inner02 .w_myad_btn button span img{width:12px;}
+.layer_preview .inner02 .w_qrimg{margin:0 auto;width:216px;}
+.layer_preview .inner02 .w_qrimg img{width:216px;}
+
+
+
+#copyAddrToken
+{
+    position:   absolute;
+    top:        0;
+    left:       0;
+    width:      1px;
+    height:     1px;
+    margin:     0;
+    padding:    0;
+    border:     0;
+}
+
+
+
+
+
+
+
+
+
+
+

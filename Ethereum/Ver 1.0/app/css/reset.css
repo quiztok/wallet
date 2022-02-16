@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+html, body, header, section, article, aside, footer, nav, hgroup, h1, h2, h3, h4, h5, h6, div, p, ul, li, figure, fieldset {
+    padding: 0;
+    margin: 0;
+}
+html {font-family:"Noto Sans KR", "Malgun Gothic", "���� ����", dotum, ����, sans-serif;}
+html, body { height:100% }
+[hidden], area, base, basefont, command, datalist, head, input[type=hidden], link, menu[type=context], meta, noembed, noframes,
+param, script, source, style, track, title { /* case-insensitive */
+    display: none;
+}
+
+address, article, aside, blockquote, body, center, dd, dir, div, dl, dt, figure, figcaption, footer, form, h1, h2, h3, h4, h5, h6, header,
+hgroup, hr, html, legend, listing, menu, nav, ol, p, plaintext, pre, section, summary, ul, xmp { 
+    display: block; 
+}
+
+table { display: table; border-collapse: collapse; }
+caption {display: none; }
+colgroup { display: table-column-group; }
+col { display: table-column; }
+thead { display: table-header-group; }
+tbody { display: table-row-group; }
+tfoot { display: table-footer-group; }
+tr { display: table-row; }
+td, th { display: table-cell;}
+
+li { display: list-item; }
+
+ruby { display: ruby; }
+rt { display: ruby-text;}
+
+fieldset, img, img a { border: 0 none; }
+ul, li { list-style: none; margin:0; padding:0;}
+dl, dd, dt {list-style: none; margin:0;padding:0 }
+em, address, i { font-style: normal; }
+a {color:#666; text-decoration:none;cursor: pointer;outline:none }
+a:hover { text-decoration: underline; }
+
+b, strong {font-weight:600;}
+h1, h2, h3, h4, h5	{margin:0; padding:0;font-weight:400}
+button	{border:none;cursor:pointer;letter-spacing:-0.75px;padding:0;vertical-align:middle;;outline:none}
+pre {font-family:"Noto Sans KR", "Malgun Gothic", "���� ����", dotum, ����, sans-serif;white-space: pre-wrap;}
+
+input {-webkit-appearance: none;-webkit-border-radius: 0;}
+i {display:inline-block}
+a:hover {text-decoration:none}
+
+
+@font-face {
+font-family: 'Noto Sans KR"';
+font-style: normal;
+font-weight: 100;
+src: local('Noto Sans Light'), local('NotoSans-Light'), url(/NotoSans-Light.eot);
+src: url(/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+url(/NotoSans-Light.woff2) format('woff2'),
+url(/NotoSans-Light.woff) format('woff');;
+}
+@font-face {
+font-family: 'NotoKrR';
+font-style: normal;
+font-weight: 300;
+src: local('Noto Sans Regular'), local('NotoSans-Regular'), url(/NotoSans-Regular.eot);
+src: url(/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+url(/NotoSans-Regular.woff2) format('woff2'),
+url(/NotoSans-Regular.woff) format('woff');
+}
+@font-face {
+font-family: 'NotoKrM';
+font-style: normal;
+font-weight: 500;
+src: local('Noto Sans Medium'), local('NotoSans-Medium'), url(/NotoSans-Medium.eot);
+src: url(/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+url(/NotoSans-Medium.woff2) format('woff2'),
+url(/NotoSans-Medium.woff) format('woff');
+}
+@font-face {
+font-family: 'NotoKrB';
+font-style: normal;
+font-weight: 700;
+src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(/NotoSans-Bold.eot);
+src: url(/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+url(/NotoSans-Bold.woff2) format('woff2'),
+url(/NotoSans-Bold.woff) format('woff');
+}
+
+ 

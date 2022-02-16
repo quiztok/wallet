@@ -1,0 +1,302 @@
+/* common */
+html {
+    font-size: 100%;
+	font-weight:400;
+    color: #444444
+}
+html,
+html body {
+    height: 100%; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.document {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 100%;
+    height: 100%;
+}
+.area {
+    position: relative;
+	min-height:100%;
+	height:100%
+}
+.hidden {display: none;}
+
+
+button,
+input {
+    line-height: normal;
+    *overflow: visible; 
+}
+
+button {
+    color:inherit;
+    padding:0;
+    border:0;
+    background-color:transparent;
+    outline:transparent; 
+}
+button, input, select, textarea {
+	font-family:inherit;
+	vertical-align: baseline;
+    *vertical-align: middle;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button; 
+}
+input[type="checkbox"],
+input[type="radio"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box; 
+}
+input[type="number"],
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none; 
+}
+
+button::-moz-focus-inner, 
+input::-moz-focus-inner {border:0;padding:0}
+textarea {overflow:auto;vertical-align:top;resize: vertical}
+input:invalid, 
+textarea:invalid {border-color:#C82E2D;}
+button[disabled], 
+input[disabled] {cursor:default;opacity: 0.5}
+input::-ms-clear {display: none;}
+table {border-collapse: collapse;border-spacing:0;}
+td {vertical-align: top;}
+h1, h2, h3, h4, h5, h6 {font-size:inherit;font-weight:inherit;margin:0}
+i, address, em {font-style: normal;}
+
+/* header */
+.header {
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:10;
+    width:100%;
+    height:45px;
+    padding:0 0 0 15px;
+    background-color:#fff;
+    box-sizing: border-box;
+    border-bottom:2px solid #f9f9f9
+}
+.header.fixed {
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+}
+.header h1 {
+    padding-right: 100px;
+    font-size: 16px;
+    line-height: 42px;
+}
+.header h1 span {
+	font-size:16px;
+	letter-spacing:-0.48px;
+   
+}
+
+.header h1 span.wordcut{
+     overflow:hidden;
+    width:180px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 100%;
+    
+    
+}
+
+.header h1 .count {
+    margin-left: 4px; 
+}
+.header a,
+.header button {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display:inline-block;
+	padding:0 5px;
+    min-height:43px;
+	line-height:100%;
+}
+.header .option {
+    position:absolute;
+    right:0px; 
+	top:0px;
+    min-width:50px;
+    height:45px;
+    padding-right:11px;
+}
+.header .option button {
+	background:#fff
+}
+.header .status-point {
+	font-family:'Roboto';
+    font-size:16px;
+	font-weight:bold;
+    color:#636363;
+    line-height:44px; 
+}
+
+/*  header/footer icon */
+.icon-point {
+    width:16px;
+    height:16px;
+	vertical-align:middle;
+    display:inline-block;
+    margin:0 5px 3px 0;
+    background:url(/icon_point.png) no-repeat 0 0;
+    background-size:16px auto;
+}
+.icon-search {
+    width:17px;
+    height:17px;
+    vertical-align:middle;
+    display:inline-block;
+    background:#fff url(/icon_search.png) no-repeat 0 0;
+    background-size:17px auto;
+}
+.icon-setting {
+    width:17px;
+    height:17px;
+    vertical-align:middle;
+    display:inline-block;
+    background:url(/icon_setting.png) no-repeat 0 0;
+    background-size:17px auto;
+}
+
+/* footer area */
+#footer {
+    /*display: none;*/
+}
+
+.nav-foot {
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index:2;
+    width:100%;
+    height:56px;
+	border-top:2px solid #f9f9f9;
+    background-color:#FCFCFC; 
+}
+.nav-foot a {
+	float:left;
+	display:block;
+	width:20%;
+    height:100%;
+    text-align:center;
+	line-height:16px
+}
+.nav-foot a i {
+	display:block;	
+    width:20px;
+    height:20px;
+	margin:8.6px auto 0
+}
+
+.nav-foot a span {
+    font-size:10px;
+    color: #636363; 
+}
+.nav-foot a:hover span, 
+.nav-foot a:active span, 
+.nav-foot a:focus span {
+    color: #343434; 
+}
+
+.icon-bar-bot {
+    background:url(/icon-bar-bot.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+.icon-bar-bot.active,
+*:hover > .icon-bar-bot {    
+    background:url(/icon-bar-bot-on.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+.icon-bar-nsec {
+    background:url(/icon-bar-nsec.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+.icon-bar-nsec.active,
+*:hover > .icon-bar-nsec {    
+    background:url(/icon-bar-nsec-on.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+.icon-bar-channel {
+    background:url(/icon-bar-channel.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+.icon-bar-channel.active,
+*:hover > .icon-bar-channel {    
+    background:url(/icon-bar-channel-on.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+.icon-bar-chat {
+    background:url(/icon-bar-chat.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+*:hover > .icon-bar-chat,
+.icon-bar-chat.active {
+    background:url(/icon-bar-chat-on.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+.icon-bar-friend {
+    background:url(/icon-bar-friend.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+.icon-bar-friend.active,
+*:hover > .icon-bar-friend {
+    background:url(/icon-bar-friend-on.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+.icon-bar-point {
+    background:url(/icon-bar-point.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+.icon-bar-point.active,
+*:hover > .icon-bar-point {
+    background:url(/icon-bar-point-on.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+.icon-bar-quiz {
+    background:url(/icon-bar-quiz.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+.icon-bar-quiz.active,
+*:hover > .icon-bar-quiz {
+    background:url(/icon-bar-quiz-on.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+.icon-bar-event {
+    background:url(/icon-bar-event.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+.icon-bar-event.active,
+*:hover > .icon-bar-event {
+    background:url(/icon-bar-event-on.png) no-repeat 0 0;
+    background-size:20px auto;
+}
+img {width:100%}
+
+.eng {
+	font-family:'Rototo';
+	font-weight:bold
